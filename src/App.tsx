@@ -1,4 +1,3 @@
-import Spline from "@splinetool/react-spline";
 import { Bot, ChevronRight, Zap, ShieldCheck } from 'lucide-react';
 
 function App() {
@@ -67,10 +66,7 @@ function App() {
 
         <div className="h-[500px] w-full lg:h-[600px] relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-lumina-accent/20 rounded-full blur-[100px] -z-10"></div>
-          <Spline
-            scene="https://prod.spline.design/kZDDjO5IyCcmJbIV/scene.splinecode"
-            className="w-full h-full"
-          />
+          <spline-viewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
 
           <div className="absolute bottom-4 right-4 text-xs text-gray-600">
             Interactive 3D Model
