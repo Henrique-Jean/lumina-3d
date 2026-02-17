@@ -3,7 +3,7 @@ import { Bot, ChevronRight, Zap, ShieldCheck } from 'lucide-react';
 
 function App() {
   return (
-    <div className="min-h-screen bg-lumina text-white font-sans selection:bg-lumina-accent selection:text-white">
+    <div className="min-h-screen bg-red-600 text-white font-sans selection:bg-lumina-accent selection:text-white">
       <nav className="flex justify-between items-center p-8 max-w-7xl mx-auto">
         <div className="flex items-center gap-2 text-2xl font-bold tracking-tighter">
           <div className="w-8 h-8 bg-lumina-accent rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(99,102,241,0.5)]">
@@ -65,15 +65,19 @@ function App() {
           </div>
         </div>
 
+        {/* LADO DIREITO: O OBJETO 3D */}
         <div className="h-[500px] w-full lg:h-[600px] relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-lumina-accent/20 rounded-full blur-[100px] -z-10"></div>
-          <Spline
-            scene="https://prod.spline.design/kZDDjO5IyCcmJbIV/scene.splinecode"
+          
+     
+          { <Spline 
+            scene="https://prod.spline.design/kZDDjO5IyCcmJbIV/scene.splinecode" 
             className="w-full h-full"
-          />
-
-          <div className="absolute bottom-4 right-4 text-xs text-gray-600">
-            Interactive 3D Model
+          /> 
+          }
+          
+          <div className="text-white text-center pt-20">
+              O ROBÔ ESTÁ DORMINDO 😴
           </div>
         </div>
       </main>
